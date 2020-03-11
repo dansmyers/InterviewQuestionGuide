@@ -21,6 +21,6 @@ your changes before I accept them.
 
 ## Useful Links
 
-[Markdown syntax cheat sheet](). Markdown is a way to write text files that can be easily parsed into web pages. It includes special symbols to create titles, section headings, lists, bold and italicized fonts, and code blocks.
+[Markdown syntax cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Markdown is a way to write text files that can be easily parsed into web pages. It includes special symbols to create titles, section headings, lists, bold and italicized fonts, and code blocks.
 
 [Tutorial on Pull Requests](https://yangsu.github.io/pull-request-tutorial/) and the [Official GitHub documentation](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests).
