@@ -41,6 +41,7 @@ Input: array integer of 89
 
 # Complexity Analysis
 **O(n)**
+The worst case scenario is if you have to access all of the elements and change the individual digits. For instance, you have to access all digits if the array is 9999 because all digits are 9 and you have to change them to 0 and add 1. 
 
 # Code Implementation
 ```
