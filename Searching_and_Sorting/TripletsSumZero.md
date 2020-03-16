@@ -2,8 +2,7 @@
 When given an array of distinct N integers, return all triplet sets that sum up to 0 such that a + b + c = 0 by creating a function: findTriplets(). If no triplet sets exist, then print out "no triplet sets found". 
 
 # Example
-Given array = [-4, -2, 0, 2, 4], 
-The function findTriplets() will return the unique triplet sets of: 
+Given array = [-4, -2, 0, 2, 4], the function findTriplets() will return the unique triplet sets of: 
 [
   [-4, 0, 4],
   [-2, 0, 2], 
