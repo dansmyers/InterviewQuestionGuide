@@ -46,6 +46,7 @@ Output:
 2. Each iteration you go into, you would have to examine 1 fewer elements. You will have to loop through all combinations of elements to ensure that all triplet sets are found, which is n to the power of 3 because there are 3 nested for loops. 
 
 # Code Implementation
+```
 public void findTriplets(int[] array) { 
     int length = array.length; 
     boolean exists = true; 
@@ -63,6 +64,7 @@ public void findTriplets(int[] array) {
         System.out.println("no triplet sets found"); 
     }
 } 
+```
   
 # Review Questions
 1. What is this kind of searching method called? 
