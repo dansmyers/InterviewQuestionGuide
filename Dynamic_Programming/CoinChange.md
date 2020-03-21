@@ -86,9 +86,13 @@ public static void main(String[] args) {
 
 To illustrate the solution method, we can apply our recursive, dynamic programming algorithm to the example N = 4 and S = { 1, 2, 3 }. Please note that indentation is used to demonstrate where recursive calls are being made, and the following key is helpful in identifying how values are being returned. 
 
-```html
-<div class="text-purple"> Red </div> indicates a return of 1 from the first base case N == 0. 
+- Red indicates a return of 1 from the first base case N ==0. 
+- Blue indicates a return of 0 from the second base case N < 0 ||(N >= 1 && M <= 0).
+- Purple indicates a return from the summation change(N, M-1, S) + change(N-S[M-1], M, S).
+- Green indicates a return based off what has previously been computed.
+
+![Image of the solution method for the Coin Change problem](https://github.com/ewurst/InterviewQuestionGuide/blob/master/Dynamic_Programming/Solution%20Method%20Illustration.PNG)
+
+The example creates the following <key, value> pairs in the HashMap:
 
 
-
-```
