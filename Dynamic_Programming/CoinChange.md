@@ -114,4 +114,6 @@ Key|Value
 1\|3 | 1
 4\|3 | 4
 
-**Review question:** What is memoization? How can it be applied to a problem with overlapping subproblems to produce an efficient algorithm? 
+## Review
+
+What is memoization? How can it be applied to a problem with overlapping subproblems to produce an efficient algorithm? 
