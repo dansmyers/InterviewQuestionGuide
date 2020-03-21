@@ -95,4 +95,23 @@ To illustrate the solution method, we can apply our recursive, dynamic programmi
 
 The example creates the following <key, value> pairs in the HashMap:
 
+Key|Value
+---|-----
+4\|0 | 0
+3\|0 | 0
+2\|0 | 0
+1\|0 | 0
+0\|1 | 1
+1\|1 | 1
+2\|1 | 1
+3\|1 | 1
+4\|1 | 1
+0\|2 | 1
+2\|2 | 2
+4\|2 | 3
+1\|2 | 1
+-2\|3 | 0
+1\|3 | 1
+4\|3 | 4
 
+**Review question:** What is memoization? How can it be applied to a problem with overlapping subproblems to produce an efficient algorithm? 
