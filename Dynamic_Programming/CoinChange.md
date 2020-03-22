@@ -38,7 +38,7 @@ public static int change(int N, int M, int S[]) {
     if(N < 0 || (N >= 1 && M <= 0))
         return 0;
         
-    return change(N, M-1, S, lookup) + change(N-S[M-1], M, S, lookup);
+    return change(N, M-1, S) + change(N-S[M-1], M, S);
 }
 ```
 
