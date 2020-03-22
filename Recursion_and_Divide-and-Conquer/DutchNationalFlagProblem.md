@@ -1,7 +1,5 @@
 # Dutch National Flag
 
-## Tutorial
-
 ## Problem
 
 ![Image of the Dutch national flag](https://github.com/ewurst/InterviewQuestionGuide/blob/master/Recursion_and_Divide-and-Conquer/Dutch%20National%20Flag.jpg)
