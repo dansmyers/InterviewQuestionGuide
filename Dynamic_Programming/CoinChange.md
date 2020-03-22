@@ -84,6 +84,8 @@ public static void main(String[] args) {
 }
 ```
 
+### Example
+
 To illustrate the solution method, we can apply our recursive, dynamic programming algorithm to the example N = 4 and S = { 1, 2, 3 }. Please note that indentation is used to demonstrate where recursive calls are being made, and the following key is helpful in identifying how values are being returned. 
 
 - Red indicates a return of 1 from the first base case N ==0. 
