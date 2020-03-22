@@ -119,5 +119,12 @@ public static void main(String [] args) {
 }
 ```
 
+## Example
+
 
 ## Review
+
+1. Now that we have walked through how to recursively sort a Dutch national flag problem, how might you perform the same sort without recursion? How does the use of recursion help with the efficiency of the program?
+2. Why do you think there is an additional check to see if the array is already sorted in the 
+*quicksort* method? **Tip:** try tracing through an example without using that for loop.
+3. How does the Dutch national flag implementation build on the traditional quicksort algorithm?
