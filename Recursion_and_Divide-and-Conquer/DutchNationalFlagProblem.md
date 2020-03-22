@@ -7,12 +7,12 @@
 Based on the design of the Dutch national flag, as depicted above, which consists of three horizontal strips: red, white, and blue. Initially, think of having an assortment of balls in these three colors – the exact number is immaterial. The goal is to organize these balls into groups based on color, and then order the groups to match the flag.Now, apply the same concept to three different numbers, given in any order, and sort into ascending order.
 
 ```
-Given {2, 4, 2, 3, 4, 2, 3, 2, 4, 4, 2, 3}, sort into {2, 2, 2, 2, 2, 3, 3, 3, 4, 4, 4, 4}
+Given {2, 4, 2, 3, 4, 2, 3, 2, 4, 4, 2, 3}, sort into {2, 2, 2, 2, 2, 3, 3, 3, 4, 4, 4, 4}.
 
-Given {5, 1, 7, 7, 1, 5, 5, 1, 7, 1}, sort into {1, 1, 1, 1, 5, 5, 5, 7, 7, 7}
+Given {5, 1, 7, 7, 1, 5, 5, 1, 7, 1}, sort into {1, 1, 1, 1, 5, 5, 5, 7, 7, 7}.
 ```
 
-The process is the same regardless of what the three numbers areand how many of each there is.
+The process is the same regardless of what the three numbers are and how many of each there is.
 
 **Check-in:** Given {3, 9, 9, 12, 3, 12, 12, 12, 9, 3, 9}, what should you return?
 
@@ -121,6 +121,57 @@ public static void main(String [] args) {
 
 ## Example
 
+Let’s return to our earlier example of sorting {5, 1, 7, 7, 1, 5, 5, 1, 7, 1} into {1, 1, 1, 1, 5, 5, 5, 7, 7, 7} and trace through the methods to illustrate how it works. Note that indentation is used to represent when method calls start and return.
+
+```
+Initial call from main of quicksort({5, 1, 7, 7, 1, 5, 5, 1, 7, 1}, 0, 9)
+    +   0 is not greater than 9, so the base case is not triggered
+    +   array is not sorted, continue with recursion
+    +   partition({5, 1, 7, 7, 1, 5, 5, 1, 7, 1}, 0, 9)
+        -   9 is not less than 1, so the base case is not triggered   
+        -   mid =0, piv = 1
+        -   5 > 1, so array[mid] and array[high] are swapped, the high index is decrementedto 8
+        -   current array:{1, 1, 7, 7, 1, 5, 5, 1, 7, 5}
+        -   1 == 1, so mid index is incremented – now mid = 1
+        -   1 == 1, so mid index is incremented – now mid = 2
+        -   7 > 1, so array[mid] and array[high] are swapped, the high index is decremented to 7
+        -   current array: {1, 1, 7, 7, 1, 5, 5, 1, 7, 5}
+        -   7 > 1, so array[mid] and array[high] are swapped, the high index is decremented to 6
+        -   current array: {1, 1, 1, 7, 1, 5, 5, 7, 7, 5}
+        -   1 == 1, so mid index is incremented – now mid = 3
+        -   7 > 1, so array[mid] and array[high] are swapped, the high index is decremented to 5
+        -   current array: {1, 1, 1, 5, 1, 5, 7, 7, 7, 5}
+        -   5 > 1, so array[mid] and array[high] are swapped, the high index is decremented to 4
+        -   current array: {1, 1,1, 5, 1, 5, 7, 7, 7, 5}
+        -   5 > 1, so array[mid] and array[high] are swapped, the high index is decremented to 3
+        -   current array: {1, 1, 1, 1, 5, 5, 7, 7, 7, 5}
+        -   1 == 1, so mid index is incremented – now mid = 4
+        -   mid is now greater than high, exit while loop
+        -   i = low-1 = -1
+        -   j = mid = 4
+    +   quicksort({1, 1, 1, 1, 5, 5, 7, 7, 7, 5}, 0, -1)
+        -   0 is greater than -1, triggering the base case
+    +   quicksort({1, 1, 1, 1, 5, 5, 7, 7, 7, 5}, 4,9)
+        -   4 is not greater than 9, so the base case is not triggered
+        -   array is not sorted, continue with recursion
+        -   partition({1, 1, 1, 1, 5, 5, 7, 7, 7, 5}, 4, 9)
+            ▪   5 is not less than 1, so the base case is not triggered
+            ▪   mid= 4, piv = 5
+            ▪   5 == 5, so mid is incremented – now mid = 5
+            ▪   5 == 5, so mid is incremented – now mid = 6
+            ▪   7 > 5, so array[mid] and array[high] are swapped, the high index is decremented to 8
+            ▪   current array: {1, 1, 1, 1, 5, 5, 5, 7, 7, 7}
+            ▪   5 == 5, so mid is incremented – now mid = 7
+            ▪   7 > 5, so array[mid] and array[high] are swapped, the high index is decremented to 7
+            ▪   7 > 5, so array[mid] and array[high] are swapped, the high index is decremented to 6
+            ▪   mid is now greater than high, exit while loop
+            ▪   i = low–1 = 3
+            ▪   j = high = 6
+        -   quicksort({1, 1, 1, 1, 5, 5, 5, 7, 7, 7}, 0, 3)
+            ▪   0 is not greater than 3, so the base case is not triggered
+            ▪   array issorted, return
+    +   initial quicksort call is now complete and the array sorted array returns to main
+```
 
 ## Review
 
