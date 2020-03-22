@@ -30,7 +30,7 @@ To **compute the value of an optimal solution**, we must also consider the **bas
 
 Now that we’ve outlined our solution, we can encode it in Java:
 
-```
+```Java
 public static int change(int N, int M, int S[]) {
     if(N == 0)
         return 1; 
@@ -47,7 +47,7 @@ solutions. Each time the algorithm encounters a subproblem, it will check if the
 
 We can memoize our algorithm by storing and retrieving solutions using Java’s HashMap:
 
-```
+```Java
 public static int change(int N, int M, int S[], Map<String, Integer> lookup) {
     if(N == 0)
         return 1;
@@ -67,7 +67,7 @@ public static int change(int N, int M, int S[], Map<String, Integer> lookup) {
 
 We can now test our algorithm in main by calling the change() method with our example values: 
 
-```
+```Java
 public static void main(String[] args) {
 
     Map<String, Integer> lookup1 = new HashMap<>();
