@@ -26,7 +26,7 @@ The Diagonal Sum of a Binary Tree problem uses **diagonal traversal** in order t
 
 From here, we can determine the diagonal sum by adding the values of each node that are on the same diagonal line.
 
-Now, how would we solve this problem algorithmically?
+**Now, how would we solve this problem algorithmically?**
 
 The basic algorithm for this problem can be summed up in five steps:
 
@@ -36,10 +36,70 @@ The basic algorithm for this problem can be summed up in five steps:
 4. Repeat Steps 2, 3, & 4 recursively for each node until there are no more nodes to process.
 5. Calculate the sum of the values that correspond to a node with the same vertical distance.
 
+Now that we have the basic algorithm established, we can formulate code implementation based around this algorithm. The below code implementation is in Python and utilizes the *dict()* function in order to store the diagonal sum for each vertical distance:
+
+The first part of the Python implementation creates a Node class in order to make the nodes that we want to traverse:
+
+```Python
+# creates node class
+class newNode:  
+    def __init__(self, data):  
+        self.data = data  
+        self.left = self.right = None
+```
+
+The second part of the Python implementation uses the basic algorithm that we established earlier in order to find the diagonal sum for each vertical distance:
+
+```Python
+# Function to calculate sum of each diagonal
+# currNode: node currently looking at  
+# vd: vertical distance of any node 
+# dictOfDiagonalSums: stores all diagonal sums  
+def diagonalSumUtil(currNode, vd, dictOfDiagonalSums) : 
+    # if currNode doesn't exist, end recursive call  
+    if(not currNode):  
+        return
+
+    # creates new entry in dict for current vd      
+    if vd not in dictOfDiagonalSums: 
+        dictOfDiagonalSums[vd] = 0
+
+    # adds currNode to sum of it's vd
+    dictOfDiagonalSums[vd] += currNode.data  
+    
+    # keeps vd the same for right children 
+    diagonalSumUtil(currNode.right, vd, 
+                       dictOfDiagonalSums)  
+
+    # increments vd for left children 
+    diagonalSumUtil(currNode.left, vd + 1,  
+                          dictOfDiagonalSums)  
+```
+
+Finally, the third part of the Python implementation prepares the *diagonalSumUtil(...)* with starting values and also prints out the results once the *diagonalSumUtil(...)* method returns:
+
+```Python
+# Function to calculate the diagonal sum of a given tree
+def diagonalSum(root) : 
+  
+    # creates a dict to put diagonal sums into
+    dictOfDiagonalSums = dict()  
+      
+    # calls earlier function starting at root 
+    diagonalSumUtil(root, 0, dictOfDiagonalSums)  
+  
+    # print statement to understand what is being printed after
+    print("Diagonal sum(s) in a binary tree:") 
+    
+    # prints sums of every vd
+    for vd in dictOfDiagonalSums:
+        print ("Vertical distance of {} has the sum of {}".format(vd, dictOfDiagonalSums[vd]))
+```
+
 
 ## Example
 
-In order to prove that the above Python implementation holds, we will insert the binary tree into the implementation in order to calculate the diagonal sum.
+In order to prove that the above Python implementation holds, we will insert the following binary tree into the implementation in order to calculate the diagonal sum.
 
 ![Image of a binary tree with lines of slope -1 passing through the nodes](https://github.com/ewurst/InterviewQuestionGuide/blob/master/Trees/Diagonal%20Sum%20of%20a%20Binary%20Tree%20Write-up%20illustrated%20example%20solution.png)
 
@@ -61,7 +121,11 @@ if __name__ == '__main__':
     diagonalSum(root) 
 ```
 
-
+```
+Vertical distance of 0 has the sum of 31
+Vertical distance of 1 has the sum of 24
+Vertical distance of 2 has the sum of 27
+```
 
 ## Review
 
