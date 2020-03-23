@@ -9,9 +9,9 @@ Consider lines of slope -1 passing through the nodes in the given binary tree. A
 Given the binary tree above, by examining where the lines of slope -1 are, we're able to determine which values go into which summation. We will elaborate on the vd labels later, which have to do with the vertical distances of each node.
 
 ```
-   The first summation, which corresponds to a vertical distance of 0, would be: 20 + 30 + 35 + 40 = 125
-   The second summation, which correponds to a vertical distance of 1, would be: 10 + 15 + 18 + 25 + 28 + 32 + 34 = 162
-   The third summation, which corresponds to a vertical distance of 2, would be: 5 + 8 + 12 + 22 + 26 + 27 = 100
+The first summation, which corresponds to a vertical distance of 0, would be: 20 + 30 + 35 + 40 = 125
+The second summation, which correponds to a vertical distance of 1, would be: 10 + 15 + 18 + 25 + 28 + 32 + 34 = 162
+The third summation, which corresponds to a vertical distance of 2, would be: 5 + 8 + 12 + 22 + 26 + 27 = 100
 ```
 
 **Check-in:** Given the binary tree below, calculate the diagonal summations of the elements belonging to the same line.
@@ -39,7 +39,29 @@ The basic algorithm for this problem can be summed up in five steps:
 
 ## Example
 
+In order to prove that the above Python implementation holds, we will insert the binary tree into the implementation in order to calculate the diagonal sum.
+
 ![Image of a binary tree with lines of slope -1 passing through the nodes](https://github.com/ewurst/InterviewQuestionGuide/blob/master/Trees/Diagonal%20Sum%20of%20a%20Binary%20Tree%20Write-up%20illustrated%20example%20solution.png)
+
+```Python
+if __name__ == '__main__': 
+    # creates a tree to sum
+    root = newNode(1)  
+    root.left = newNode(10)  
+    root.right = newNode(5)  
+    root.right.left = newNode(2)
+    root.right.right = newNode(8)
+    root.right.right.right = newNode(17)
+    root.left.left = newNode(9)
+    root.left.right = newNode(12)
+    root.left.right.left = newNode(11)
+    root.left.right.left.right = newNode(7)
+
+    # calls function to sum created tree  
+    diagonalSum(root) 
+```
+
+
 
 ## Review
 
