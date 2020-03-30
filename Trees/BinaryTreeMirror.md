@@ -1,7 +1,6 @@
 # Convert Binary Tree to its Mirror
-
-#### Given a binary tree, write an efficient algorithm to convert binary tree to its mirror
-Description
+Description: 
+Given a binary tree, write an efficient algorithm to convert binary tree to its mirror
 
 ## The problem:
 
