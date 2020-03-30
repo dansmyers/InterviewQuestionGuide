@@ -1,6 +1,6 @@
 
 ## Problem
-###Convert Binary Tree to its Mirror
+##Convert Binary Tree to its Mirror
 
 ##The problem:
 
