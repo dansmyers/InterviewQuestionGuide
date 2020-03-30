@@ -1,23 +1,19 @@
-# Questions and Answers
+# Convert Binary Tree to its Mirror
 
-## This Sprint Ends on 3/25. There WILL NOT be a quiz.
+#### Given a binary tree, write an efficient algorithm to convert binary tree to its mirror
 
 ## Description
 
+## The problem:
 
-## Problem
-##Convert Binary Tree to its Mirror
+## Example:
 
-##The problem:
+## Try it:
 
-##Example:
-
-##Try it:
-
-##The Solution:
+## The Solution:
    
-##Illustration of the solution.
+## Illustration of the solution.
 
-##Pseudocode:
+## Pseudocode:
 
-##Review Concepts:
+## Review Concepts:
