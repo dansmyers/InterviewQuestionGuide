@@ -1,8 +1,7 @@
 # Convert Binary Tree to its Mirror
 
 #### Given a binary tree, write an efficient algorithm to convert binary tree to its mirror
-
-## Description
+Description
 
 ## The problem:
 
@@ -16,4 +15,4 @@
 
 ## Pseudocode:
 
-## Review Concepts:
+## Concept Review:
