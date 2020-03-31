@@ -22,23 +22,23 @@ Array allBoxes = null;
 // Use a loop to first add an original box plus its 2 rotations for all boxes in the boxes array
 
 for (i=0 to n-1):
-// copy original box
-allBoxes.append(boxes[i]);
-// create the first rotation of the box
-Box box1 = (boxes[i].w, boxes[i].h, boxes[i].d, boxes[i].h*boxes[i].d);
+	// copy original box
+	allBoxes.append(boxes[i]);
+	// create the first rotation of the box
+	Box box1 = (boxes[i].w, boxes[i].h, boxes[i].d, boxes[i].h*boxes[i].d);
 
-// create the second rotation of the box
- Box box2 = (boxes[i].d, boxes[i].h, boxes[i].w, boxes[i].h*boxes[i].w);
+	// create the second rotation of the box
+	 Box box2 = (boxes[i].d, boxes[i].h, boxes[i].w, boxes[i].h*boxes[i].w);
 
-// append to list
-allBoxes.append(box1);
+	// append to list
+	allBoxes.append(box1);
 	
 // sort allBoxes in decreasing order according to their area
 reverseSort(allBoxes);
 
 	
 for (i=1 to n-1):
-for (j=0 to i-1):
-if(boxes[i].w < boxes[j].w and boxes[i].d < boxes[j].d:
+	for (j=0 to i-1):
+		if(boxes[i].w < boxes[j].w and boxes[i].d < boxes[j].d:
 
 ```
