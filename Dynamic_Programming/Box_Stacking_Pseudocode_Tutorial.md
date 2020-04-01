@@ -65,7 +65,7 @@ Now the original boxes and the rotations have been added to one list. Sorting th
 				 	maxStackHeight[i] = maxStackhieght[j] + allBoxes[i].h;
 
 	// set max to a negative value for comparisons
-	maxStackOfBoxes = -1
+	maxStackOfBoxes = -1;
 
 	// search the maxStackHeight array for the maximum value
 	for (i=0 to n-1):
@@ -74,4 +74,4 @@ Now the original boxes and the rotations have been added to one list. Sorting th
 	return maxStackOfBoxes;
 ```
 
-This method includes one nest for loop, which means that the time complexity will be **O(1)**.
+This method includes one nested for loop, which means that the time complexity will be **O(1)**.
