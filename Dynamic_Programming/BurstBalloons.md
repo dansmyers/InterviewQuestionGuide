@@ -1,6 +1,6 @@
 # Burst Balloons
 
-![alt text](https://github.com/rollinscs/cms460-s20-sprint-5-SALVINOJ/blob/master/BurstBalloonsMeme.png "Meme by Jessica Salvino") 
+![alt text](https://github.com/SALVINOJ/InterviewQuestionGuide/blob/master/Dynamic_Programming/BurstBalloonsMeme.png "Meme by Jessica Salvino") 
 
 ## Problem
 
