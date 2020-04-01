@@ -53,10 +53,14 @@ Now the original boxes and the rotations have been added to one list. Sorting th
 	// compute maxStackHeight values using the bottom up stategy
 	for (i=1 to n-1):
 		for (j=0 to i-1):
-
-		if(boxes[i].w < boxes[j].w and boxes[i].d < boxes[j].d:
-			 if msh[i] < msh[j] + rot[i].h:
-				 maxStackHeight[i] = maxStackhieght[j] + maxStackHieght[i].h;
+		
+			// check if box j has a smaller base than box i
+			if(boxes[i].w < boxes[j].w and boxes[i].d < boxes[j].d:
+			
+				// if the current maxStackHeight at index i is less than maxStackHeight at j + box i
+				// then change it to that value
+			 	if maxStackHeight[i] < maxStackHeight[j] + allBoxes[i].h:
+				 	maxStackHeight[i] = maxStackhieght[j] + allBoxes[i].h;
 
 	// set max to a negative value for comparisons
 	maxStackOfBoxes = -1
