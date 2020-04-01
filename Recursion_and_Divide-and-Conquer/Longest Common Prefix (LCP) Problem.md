@@ -64,10 +64,10 @@ Break the main set into smaller sets until you reach atomic sets
 	* Angler is the only element therefore LCP = Angler
 
 #### Go back up to 1st Split:
-	* Compare Angel and Angelic  LCP = Angel
-	* Compare Angle and Angler  LCP = Angle
+	* Compare Angel and Angelic --> LCP = Angel
+	* Compare Angle and Angler --> LCP = Angle
 #### Back at the original set:
-	* Compare Angel and Angle  LCP = Ang
+	* Compare Angel and Angle --> LCP = Ang
 #### Conclusion:
 
 	* LCP of entire set is Ang
