@@ -10,7 +10,7 @@ Below is the psuedocode to implement the solution for the box stacking problem.
 
 ```
 // the method receives the array of boxes
-maxStackHeight(Array boxes):
+int maxStackHeight(Array boxes):
 
 	// keep track of the size of the boxes array
 	int n = boxes.size();
