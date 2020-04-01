@@ -55,23 +55,23 @@ Break the main set into smaller sets until you reach atomic sets
 
 #### Starting at the 2nd Split:
 
-  * Angel is the only element therefore LCP = Angel
+	* Angel is the only element therefore LCP = Angel
 
-  * Angelic is the only element therefore LCP = Angelic
+	* Angelic is the only element therefore LCP = Angelic
   
-  * Angle is the only element therefore LCP = Angle
+	* Angle is the only element therefore LCP = Angle
   
-  * Angler is the only element therefore LCP = Angler
+	* Angler is the only element therefore LCP = Angler
 
-Go back up to 1st Split:
-	Compare Angel and Angelic  LCP = Angel
-	Compare Angle and Angler  LCP = Angle
-Back at the original set:
-Compare Angel and Angle  LCP = Ang
-Conclusion:
-	LCP of entire set is Ang
-Recursive process terminates
+#### Go back up to 1st Split:
+	* Compare Angel and Angelic  LCP = Angel
+	* Compare Angle and Angler  LCP = Angle
+#### Back at the original set:
+	* Compare Angel and Angle  LCP = Ang
+#### Conclusion:
 
+	* LCP of entire set is Ang
+	
 ## Pseudocode Before Code
 
 ![Pseudocode for LCP][pseudocode]
