@@ -32,7 +32,7 @@ To solve this problem we must first follow the steps:
 ![alt text](https://github.com/CameronDeLone/Pics/blob/master/8x8-Grid-Quadrants-1.jpg "8x8 Grid with Quadrants")
 
 **Step 3:** Repeat this process for each quadrant, first splitting it into smaller quadrants, then adding the L-Shaped tile into the 3 quadrants which do not contain a missing cell (cells filled by a previous tile count at *missing*).
-![alt text](https://github.com/CameronDeLone/Pics/blob/master/8x8-Grid-Quadrants.jpg "8x8 Grid with Quadrants")
+![alt text](https://github.com/CameronDeLone/Pics/blob/master/8x8-Grid-Quadrants-2.jpg "8x8 Grid with Quadrants")
 
 Now that we only have 2 x 2 grids (our base-case) left we can fill the remaining cells (this is due to the fact that any 2 x 2 square with 1 missing cell contains exactly 1 L-Shaped set of cells)
 
