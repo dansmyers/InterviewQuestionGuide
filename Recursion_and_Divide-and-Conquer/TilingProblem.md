@@ -25,7 +25,7 @@ Assume you have an 8 x 8 grid as shown below, follow the previous steps to fill 
 
 To solve this problem we must first follow the steps:
 
-**Step 1:** Split the grid into quadrants
+**Step 1:** Split the grid into quadrants                                                                      
 ![alt text](https://github.com/CameronDeLone/Pics/blob/master/8x8-Grid-Quadrants.jpg "8x8 Grid with Quadrants")
 
 **Step 2:** Place the first L-Shaped tile to remove cells from the 3 quadrants which do not contain the missing cell
