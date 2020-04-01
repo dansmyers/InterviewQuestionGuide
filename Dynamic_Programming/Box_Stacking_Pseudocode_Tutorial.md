@@ -51,14 +51,17 @@ Now the original boxes and the rotations have been added to one list. Sorting th
 		maxStackHeight[i] = allBoxes[i].h;
 
 	// compute maxStackHeight values using the bottom up stategy
+	// By the end, one of the indicies will be the true maximum stack height
 	for (i=1 to n-1):
 		for (j=0 to i-1):
 		
 			// check if box j has a larger base than box i
 			if(allBoxes[i].w < allBoxes[j].w and allBoxes[i].d < allBoxes[j].d:
 			
-				// box i is smaller than box j and box i can be added to the maxStackHieght[j]
-				// only do this if this yields a larger result than maxStackHeight[i]
+				// Box i is smaller than box j and box i can be added to the maxStackHieght[j]
+				// Only do this if this yields a larger result than maxStackHeight[i]
+				// This means that certain indexes of the maxStackHeight array will be changed
+				// as the loop progresses
 			 	if maxStackHeight[i] < maxStackHeight[j] + allBoxes[i].h:
 				 	maxStackHeight[i] = maxStackhieght[j] + allBoxes[i].h;
 
