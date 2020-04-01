@@ -47,12 +47,9 @@ Midpoint Splitting Process
 
 Break the main set into smaller sets until you reach atomic sets
 
-Original Set	Angel	Angelic	Angle	Angler
+![Table Depicting Midpoint Splitting Process][table]
 
-1st Split	Angel	Angelic	Angle	Angler
-
-2nd Split	Angel	Angelic	Angle	Angler
-
+[table]: https://github.com/loadingthecode/InterviewQuestionGuide/blob/master/Recursion_and_Divide-and-Conquer/table.PNG
 
 Recursive Process
 
