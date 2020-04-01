@@ -9,23 +9,24 @@ Each box should have four attributes: height, width, depth, and base area.
 Below is the psuedocode to implement the solution for the box stacking problem.
 
 ```
-// the method receive the array of boxes
+// the method receives the array of boxes
 maxStackHeight(Array boxes):
+
 	// keep track of the size of the boxes array
 	int n = boxes.size();
 
 	// First, create an array that has the original box and the two additional rotations of the box
 	// A box with dimensions (height,width,depth) when rotated becomes (width,height,depth) and (depth,height,width)
-	// The length of this new array will be length*3
+	// The length of this new array will be n*3
 
 	// this will be an array of boxes
 	Array allBoxes = null;
 
 	// Use a loop to first add an original box plus its 2 rotations for all boxes in the boxes array
-
 	for (i=0 to n-1):
 		// copy original box
 		allBoxes.append(boxes[i]);
+		
 		// create the first rotation of the box
 		Box box1 = (boxes[i].w, boxes[i].h, boxes[i].d, boxes[i].h*boxes[i].d);
 
@@ -34,8 +35,9 @@ maxStackHeight(Array boxes):
 
 		// append to list
 		allBoxes.append(box1);
+		allBoxes.append(box2);
 ```
-Now the original boxes and the rotations have been added to one list. Sorting the list in dreasing base area is helpful.
+Now the original boxes and the rotations have been added to one list. Sorting the list in dreasing base area is helpful. This makes implementing the bottom-up approach much more straight forward. A box with a larger base area cannot be places on one with smaller base area.
 ```	
 	// sort allBoxes in decreasing order according to their base area
 	reverseSort(allBoxes);
@@ -54,11 +56,11 @@ Now the original boxes and the rotations have been added to one list. Sorting th
 	for (i=1 to n-1):
 		for (j=0 to i-1):
 		
-			// check if box j has a smaller base than box i
-			if(boxes[i].w < boxes[j].w and boxes[i].d < boxes[j].d:
+			// check if box j has a larger base than box i
+			if(allBoxes[i].w < allBoxes[j].w and allBoxes[i].d < allBoxes[j].d:
 			
-				// if the current maxStackHeight at index i is less than maxStackHeight at j + box i
-				// then change it to that value
+				// box i is smaller than box j and box i can be added to the maxStackHieght[j]
+				// only do this if this yields a larger result than maxStackHeight[i]
 			 	if maxStackHeight[i] < maxStackHeight[j] + allBoxes[i].h:
 				 	maxStackHeight[i] = maxStackhieght[j] + allBoxes[i].h;
 
@@ -71,3 +73,5 @@ Now the original boxes and the rotations have been added to one list. Sorting th
 		
 	return maxStackOfBoxes;
 ```
+
+This method includes one nest for loop, which means that the time complexity will be **O(1)**.
