@@ -5,4 +5,4 @@
 
 **Example:** Here we have a 4 x 4 grid, with the cell at 2 x 3 missing
 
-![alt text](https://github.com/CameronDeLone/Pics/Grid.jpg "Grid 1")
+![alt text](https://github.com/CameronDeLone/Pics/blob/master/Grid.jpg "Grid 1")
