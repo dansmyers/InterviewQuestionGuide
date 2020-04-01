@@ -35,7 +35,7 @@ First, create an array that has the original box and the two additional rotation
 		allBoxes.append(box1);
 		allBoxes.append(box2);
 ```
-Now the original boxes and the rotations have been added to one list. Sorting the list in decreasing base area is helpful. This makes implementing the bottom-up approach much more straight forward. A box with a larger base area cannot be places on one with smaller base area.
+Now the original boxes and the rotations have been added to one list. Sorting the list in decreasing base area is helpful. This makes implementing the bottom-up approach much more straight forward. A box with a larger base area cannot be placed on one with smaller base area.
 ```	
 	// sort allBoxes in decreasing order according to their base area
 	reverseSort(allBoxes);
