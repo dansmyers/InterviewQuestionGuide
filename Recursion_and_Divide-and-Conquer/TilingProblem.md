@@ -11,6 +11,7 @@
 
 ![alt text](https://github.com/CameronDeLone/Pics/blob/master/Grid-1Filled.jpg "Grid First Tile")
 
-**Step 2:** Next we take each of the quadants as it's own indiviual problem (*Divide* & Conquer), and preform the previous step again.
+**Step 2:** Next we take each of the quadants as it's own indiviual problem (*Divide* & Conquer), and repeat the previous step until we reach the base case (a 2 x 2 square, with 1 cell missing).
 
 ![alt text](https://github.com/CameronDeLone/Pics/blob/master/Grid-2Filled.jpg "Grid Second Tile")
+![alt text](https://github.com/CameronDeLone/Pics/blob/master/Grid-Filled.jpg "Grid Fully Filled")
