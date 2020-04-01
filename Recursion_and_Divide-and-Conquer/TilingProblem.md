@@ -5,4 +5,8 @@
 
 **Example:** Here we have a 4 x 4 grid, with the cell at 2 x 3 missing
 
-![alt text](https://github.com/CameronDeLone/Pics/blob/master/Grid.jpg "Grid 1")
+![alt text](https://github.com/CameronDeLone/Pics/blob/master/Grid.jpg "Grid")
+
+**Step 1:** We begin by adding an L-shaped tile to 3 of the 4 center cells, we can dicide which checking which quadrant has the missing cell (top-left for this example), when we place the L-shaped tile so that we are removing cells from each other quadrant.
+
+![alt text](https://github.com/CameronDeLone/Pics/blob/master/Grid-1Filled.jpg "Grid First Tile")
