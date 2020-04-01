@@ -100,3 +100,14 @@ Make sure to make the LCPCompare method or an equivalent implementation to compa
 ![Code for Comparing 2 Strings Letter by Letter][code3]
 
 [code3]: https://github.com/loadingthecode/InterviewQuestionGuide/blob/master/Recursion_and_Divide-and-Conquer/3.png
+
+## Now Let’s Review!
+Now that we’ve gone through finding the LCP in a dynamic programming perspective, try to apply this same thought process to a similar problem:
+How can we find the Longest Common Suffix Within a Set of Strings?
+Don’t write the full code implementation. Instead, just sketch out general pseudocode for your solution.
+
+## Sources
+
+•	https://www.techiedelight.com/find-longest-common-prefix-lcp-strings/
+
+•	https://www.geeksforgeeks.org/longest-common-prefix-using-binary-search/
