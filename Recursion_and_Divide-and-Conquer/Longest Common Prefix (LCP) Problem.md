@@ -1,15 +1,13 @@
 # Find the Longest Common Prefix (LCP)
+
 ## Introduction
 We are tasked with trying to find the longest common prefix within a set of strings. While there are many ways to solve this problem such as simply storing each common prefix in a separate memory location and then choosing the longest item, there is a more efficient and dynamic way of getting the solution. 
+
 ## Example
 Take for instance the input: [angel, angelic, angle, angler] 
 If we wanted to find the longest prefix for this problem using a more conventional method, we’d have to make N comparisons over a max word length of M in the worse case where N is the number of words in the set. Think O(N * M).
 The output we’d expect for the above input is ang. 
-## Midpoint Knowledge Check
-Before we move on, let’s try and write a pseudocode method that takes two strings and finds the longest common prefix between them. While this method does not solve the problem entirely, having it encapsulated in a helper method will make it easier to see the divide and conquer strategy being implemented when it is called in the main method. I have outlined the method header for you:
-public String LCP(String x, String y) {
-. . .
-}
+
 ## The Solution
 Step 1: Determine general strategy to solving the problem by breaking it down into smaller problems and solving them recursively from the bottom up.
 
@@ -70,8 +68,14 @@ Break the main set into smaller sets until you reach atomic sets
 	* Compare Angel and Angle --> LCP = Ang
 #### Conclusion:
 
-	* LCP of entire set is Ang
-	
+	* LCP of entire set is Ang	
+
+## Midpoint Knowledge Check
+Before we move on, let’s try and write a pseudocode method that takes two strings and finds the longest common prefix between them. While this method does not solve the problem entirely, having it encapsulated in a helper method will make it easier to see the divide and conquer strategy being implemented when it is called in the main method. I have outlined the method header for you:
+public String LCP(String x, String y) {
+. . .
+}
+
 ## Pseudocode Before Code
 
 <img src="https://github.com/loadingthecode/InterviewQuestionGuide/blob/master/Recursion_and_Divide-and-Conquer/pseudocode.PNG" width="75%">
