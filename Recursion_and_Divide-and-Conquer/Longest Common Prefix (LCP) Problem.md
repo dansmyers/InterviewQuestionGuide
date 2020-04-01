@@ -47,9 +47,9 @@ Midpoint Splitting Process
 
 Break the main set into smaller sets until you reach atomic sets
 
-![Table Depicting Midpoint Splitting Process][table]
+![Table Depicting Midpoint Splitting Process][table1]
 
-[table]: https://github.com/loadingthecode/InterviewQuestionGuide/blob/master/Recursion_and_Divide-and-Conquer/table.PNG
+[table1]: https://github.com/loadingthecode/InterviewQuestionGuide/blob/master/Recursion_and_Divide-and-Conquer/table1.PNG
 
 Recursive Process
 
