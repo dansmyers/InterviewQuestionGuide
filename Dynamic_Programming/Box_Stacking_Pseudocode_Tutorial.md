@@ -65,7 +65,7 @@ Now the original boxes and the rotations have been added to one list. Sorting th
 			 	if maxStackHeight[i] < maxStackHeight[j] + allBoxes[i].h:
 				 	maxStackHeight[i] = maxStackhieght[j] + allBoxes[i].h;
 
-	// set max to a negative value for comparisons
+	// set maxStackOfBoxes to a negative value for comparisons
 	maxStackOfBoxes = -1;
 
 	// search the maxStackHeight array for the maximum value
