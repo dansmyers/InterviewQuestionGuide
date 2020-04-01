@@ -15,3 +15,8 @@
 
 ![alt text](https://github.com/CameronDeLone/Pics/blob/master/Grid-2Filled.jpg "Grid Second Tile")
 ![alt text](https://github.com/CameronDeLone/Pics/blob/master/Grid-Filled.jpg "Grid Fully Filled")
+
+## Practice Problem:
+
+Assume you have an 8 x 8 grid as shown below, follow the previous steps to fill it out
+![alt text](https://github.com/CameronDeLone/Pics/blob/master/8x8-Grid.jpg "8x8 Grid")
