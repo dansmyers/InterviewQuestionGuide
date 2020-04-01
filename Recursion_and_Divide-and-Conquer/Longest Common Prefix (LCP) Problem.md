@@ -74,29 +74,20 @@ Break the main set into smaller sets until you reach atomic sets
 	
 ## Pseudocode Before Code
 
-![Pseudocode for LCP][pseudocode]
-
-[pseudocode]: https://github.com/loadingthecode/InterviewQuestionGuide/blob/master/Recursion_and_Divide-and-Conquer/pseudocode.PNG
-
+<img src="https://github.com/loadingthecode/InterviewQuestionGuide/blob/master/Recursion_and_Divide-and-Conquer/pseudocode.PNG" width="75%">
 
 ## The Code
 Base cases first!
 
-![Code for Base Cases][code1]
-
-[code1]: https://github.com/loadingthecode/InterviewQuestionGuide/blob/master/Recursion_and_Divide-and-Conquer/1.png
+<img src="https://github.com/loadingthecode/InterviewQuestionGuide/blob/master/Recursion_and_Divide-and-Conquer/1.png" width="75%">
 
 Next, find the midpoint and start the split/recursive process!
 
-![Code for Midpoint and Recursion][code2]
-
-[code2]: https://github.com/loadingthecode/InterviewQuestionGuide/blob/master/Recursion_and_Divide-and-Conquer/2.png
+<img src="https://github.com/loadingthecode/InterviewQuestionGuide/blob/master/Recursion_and_Divide-and-Conquer/2.png" width="75%">
 
 Make sure to make the LCPCompare method or an equivalent implementation to compare each letter one-by-one between both Strings!
 
-![Code for Comparing 2 Strings Letter by Letter][code3]
-
-[code3]: https://github.com/loadingthecode/InterviewQuestionGuide/blob/master/Recursion_and_Divide-and-Conquer/3.png
+<img src="https://github.com/loadingthecode/InterviewQuestionGuide/blob/master/Recursion_and_Divide-and-Conquer/3.png" width="75%">
 
 ## Now Let’s Review!
 Now that we’ve gone through finding the LCP in a dynamic programming perspective, try to apply this same thought process to a similar problem:
