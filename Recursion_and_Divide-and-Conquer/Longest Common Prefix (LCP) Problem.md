@@ -19,14 +19,14 @@ Step 3: Divide the problem up into subproblems. Since this problem deals with St
 
 ### Steps In Detail
 
-Step 1
+#### Step 1
 
 1)	Since we are working with Strings and will be coding a solution at the end, we are going to be basing the steps off pseudocode. 
 
 2)	One way to break the problem up is to continuously split the main String set into smaller string sets by cutting it at the midpoint until you reach a point where the “low” index value is equal to the “high” index value (this indicates that the subset is only a single element). 
 
 3)	We then work our way up recursively by returning the biggest prefix at each recursive frame until we make it back where we start
-Step 2
+#### Step 2
 
 There are two base cases for this problem:
 
@@ -34,7 +34,7 @@ There are two base cases for this problem:
 
 2)	Checks to see if the low value is equal to the high value, which means either there is only 1 String, or we’ve hit the bottom recursive frame.
 
-Step 3
+#### Step 3
 
 1)	The most logical way to divide the problem into smaller problems is to find the midpoint of each String set.
 
@@ -43,7 +43,7 @@ Step 3
 3)	Go back up recursively and use a helper method to compare two Strings at a time that have come from the success recursive returns and see where the prefix identicality ends. 
 
 
-Midpoint Splitting Process
+### Midpoint Splitting Process
 
 Break the main set into smaller sets until you reach atomic sets
 
@@ -51,17 +51,17 @@ Break the main set into smaller sets until you reach atomic sets
 
 [table1]: https://github.com/loadingthecode/InterviewQuestionGuide/blob/master/Recursion_and_Divide-and-Conquer/table1.PNG
 
-Recursive Process
+### Recursive Process
 
-Starting at the 2nd Split:
+#### Starting at the 2nd Split:
 
-  Angel is the only element therefore LCP = Angel
+  * Angel is the only element therefore LCP = Angel
 
-  Angelic is the only element therefore LCP = Angelic
+  * Angelic is the only element therefore LCP = Angelic
   
-  Angle is the only element therefore LCP = Angle
-
-  Angler is the only element therefore LCP = Angler
+  * Angle is the only element therefore LCP = Angle
+  
+  * Angler is the only element therefore LCP = Angler
 
 Go back up to 1st Split:
 	Compare Angel and Angelic  LCP = Angel
@@ -105,6 +105,6 @@ Don’t write the full code implementation. Instead, just sketch out general pse
 
 ## Sources
 
-•	https://www.techiedelight.com/find-longest-common-prefix-lcp-strings/
+*	https://www.techiedelight.com/find-longest-common-prefix-lcp-strings/
 
-•	https://www.geeksforgeeks.org/longest-common-prefix-using-binary-search/
+*	https://www.geeksforgeeks.org/longest-common-prefix-using-binary-search/
