@@ -15,7 +15,7 @@ maxStackHeight(Array boxes):
 	// keep track of the size of the boxes array
 	int n = boxes.size();
 ```
-// First, create an array that has the original box and the two additional rotations of the box. A box with dimensions (height,width,depth) when rotated becomes (width,height,depth) and (depth,height,width). The length of this new array will be n*3.
+First, create an array that has the original box and the two additional rotations of the box. A box with dimensions (height,width,depth) when rotated becomes (width,height,depth) and (depth,height,width). The length of this new array will be n*3.
 ```
 	// this will be an array of boxes
 	Array allBoxes = null;
