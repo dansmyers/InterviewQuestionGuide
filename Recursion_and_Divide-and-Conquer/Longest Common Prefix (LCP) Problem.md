@@ -74,3 +74,29 @@ Compare Angel and Angle  LCP = Ang
 Conclusion:
 	LCP of entire set is Ang
 Recursive process terminates
+
+## Pseudocode Before Code
+
+![Pseudocode for LCP][pseudocode]
+
+[pseudocode]: https://github.com/loadingthecode/InterviewQuestionGuide/blob/master/Recursion_and_Divide-and-Conquer/pseudocode.PNG
+
+
+## The Code
+Base cases first!
+
+![Code for Base Cases][code1]
+
+[code1]: https://github.com/loadingthecode/InterviewQuestionGuide/blob/master/Recursion_and_Divide-and-Conquer/1.png
+
+Next, find the midpoint and start the split/recursive process!
+
+![Code for Midpoint and Recursion][code2]
+
+[code2]: https://github.com/loadingthecode/InterviewQuestionGuide/blob/master/Recursion_and_Divide-and-Conquer/2.png
+
+Make sure to make the LCPCompare method or an equivalent implementation to compare each letter one-by-one between both Strings!
+
+![Code for Comparing 2 Strings Letter by Letter][code3]
+
+[code3]: https://github.com/loadingthecode/InterviewQuestionGuide/blob/master/Recursion_and_Divide-and-Conquer/3.png
