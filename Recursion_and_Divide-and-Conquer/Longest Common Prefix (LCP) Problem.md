@@ -103,3 +103,5 @@ Don’t write the full code implementation. Instead, just sketch out general pse
 *	https://www.techiedelight.com/find-longest-common-prefix-lcp-strings/
 
 *	https://www.geeksforgeeks.org/longest-common-prefix-using-binary-search/
+
+### Guide compiled by Oliver Luo
