@@ -56,10 +56,19 @@ Resulting Tree after mirroring M(T)
 
 }
 ## Walking Through the Tree visually:
+	Node D Nulls
 ![Image Input BT](https://github.com/mariellaPariente/InterviewQuestionGuide/blob/master/Trees/NullsD.png) 
+
+	Node E Nulls
 ![Image Input BT](https://github.com/mariellaPariente/InterviewQuestionGuide/blob/master/Trees/NullsE.png) 
+
+	Swap D and E
 ![Image Input BT](https://github.com/mariellaPariente/InterviewQuestionGuide/blob/master/Trees/SwapDandE.png) 
+
+	Swap F and G (The same process is followed for nulls of F and G
 ![Image Input BT](riellaPariente/InterviewQuestionGuide/blob/master/Trees/SwapFandG.png) 
+
+	Swap B and C
 ![Image Input BT](https://github.com/mariellaPariente/InterviewQuestionGuide/blob/master/Trees/SwapBandC.png) 
    
 ## Concept Review:
