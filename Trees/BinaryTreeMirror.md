@@ -65,8 +65,8 @@ Resulting Tree after mirroring M(T)
 	Swap D and E
 ![Image Input BT](https://github.com/mariellaPariente/InterviewQuestionGuide/blob/master/Trees/SwapDandE.png) 
 
-	Swap F and G (The same process is followed for nulls of F and G
-![Image Input BT](riellaPariente/InterviewQuestionGuide/blob/master/Trees/SwapFandG.png) 
+	Swap F and G 
+![Image Input BT](https://github.com/mariellaPariente/InterviewQuestionGuide/blob/master/Trees/SwapFandG.png) 
 
 	Swap B and C
 ![Image Input BT](https://github.com/mariellaPariente/InterviewQuestionGuide/blob/master/Trees/SwapBandC.png) 
