@@ -56,6 +56,10 @@ Resulting Tree after mirroring M(T)
 
 }
 ## Walking Through the Tree visually:
-![Image Input BT](https://raw.githubusercontent.com/mariellaPariente/InterviewQuestionGuide/master/Trees/Input%20tree%20BT.png) 
+![Image Input BT](https://github.com/mariellaPariente/InterviewQuestionGuide/blob/master/Trees/NullsD.png) 
+![Image Input BT](https://github.com/mariellaPariente/InterviewQuestionGuide/blob/master/Trees/NullsE.png) 
+![Image Input BT](https://github.com/mariellaPariente/InterviewQuestionGuide/blob/master/Trees/SwapDandE.png) 
+![Image Input BT](riellaPariente/InterviewQuestionGuide/blob/master/Trees/SwapFandG.png) 
+![Image Input BT](https://github.com/mariellaPariente/InterviewQuestionGuide/blob/master/Trees/SwapBandC.png) 
    
 ## Concept Review:
