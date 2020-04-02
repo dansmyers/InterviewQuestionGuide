@@ -55,7 +55,7 @@ Resulting Tree after mirroring M(T)
 	}
 
 }
-## Walking Through:
-    For 
+## Walking Through the Tree visually:
+![Image Input BT](https://raw.githubusercontent.com/mariellaPariente/InterviewQuestionGuide/master/Trees/Input%20tree%20BT.png) 
    
 ## Concept Review:
