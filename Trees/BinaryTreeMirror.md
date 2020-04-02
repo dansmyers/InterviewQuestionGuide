@@ -62,7 +62,7 @@ Resulting Tree after mirroring M(T)
 	Node E Nulls
 ![Image Input BT](https://github.com/mariellaPariente/InterviewQuestionGuide/blob/master/Trees/NullsE.png) 
 
-	Swap D and E
+	Swap D and E (First Swap)
 ![Image Input BT](https://github.com/mariellaPariente/InterviewQuestionGuide/blob/master/Trees/SwapDandE.png) 
 
 	Swap F and G 
