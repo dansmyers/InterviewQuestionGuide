@@ -18,11 +18,11 @@ The process of Mirroring a binary tree is pretty straight forward to understand.
 An inverted binary tree also called the mirror of an input tree is another binary tree with left and right childern swaped resulting in a mirror image of the input tree.
 
 ## Example:
-Starting Tree T
+Starting Tree T - Input tree
 
 ![Image Inverted BT](https://raw.githubusercontent.com/mariellaPariente/InterviewQuestionGuide/master/Trees/inverted%20BT.png)
 
-Resulting Tree after mirroring M(T)
+Resulting Tree after mirroring M(T) - Output Tree
 
 ![Image Input BT](https://raw.githubusercontent.com/mariellaPariente/InterviewQuestionGuide/master/Trees/Input%20tree%20BT.png)
 
