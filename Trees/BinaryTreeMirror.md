@@ -15,21 +15,47 @@ You may ask yourself when and how would inverting a binary tree be useful. As a 
 The process of Mirroring a binary tree is pretty straight forward to understand.
 
 ## Problem Description: Invert a binary Tree
-An inverted binary tree also called the mirror of an input tree is another binary tree with left and right childern are swaped resulting in a mirror image of the input tree.
+An inverted binary tree also called the mirror of an input tree is another binary tree with left and right childern swaped resulting in a mirror image of the input tree.
 
 ## Example:
 Starting Tree T
-![Image Input BT](https://raw.githubusercontent.com/mariellaPariente/InterviewQuestionGuide/master/Trees/Input%20tree%20BT.png)
 
-Resulting Tree after mirroring M(T)
 ![Image Inverted BT](https://raw.githubusercontent.com/mariellaPariente/InterviewQuestionGuide/master/Trees/inverted%20BT.png)
 
-## Try it:
-    For 
+Resulting Tree after mirroring M(T)
+
+![Image Input BT](https://raw.githubusercontent.com/mariellaPariente/InterviewQuestionGuide/master/Trees/Input%20tree%20BT.png)
+
+
 ## The Solution:
-   
-## Illustration of the solution.
+    Perform an inorder traversal and swap the children and recursively solve the smaller sub-problems of the left and the right sub-tree
+    
+    There are three steps that are executed for every node of the BT
+    1. If the tree is empty return NULL
+    2. Call the mirror function for the left-subtree or the right-subtree
+    3. For every node swap its left and right child 
 
 ## Pseudocode:
+     void mirror (struct node* node) {
+	// base case: if tree is empty
+	if (node == NULL)
+		return;
+	
+	else
+	{
+		struct node* temp;
 
+		mirror(node->left);
+		mirror(node->right);
+
+ 		// swap left subtree with right subtree
+		temp = node->left;
+		node->left = node->right;
+		node->right = temp;
+	}
+
+}
+## Walking Through:
+    For 
+   
 ## Concept Review:
