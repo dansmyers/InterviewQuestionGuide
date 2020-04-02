@@ -37,3 +37,30 @@ To solve this problem we must first follow the steps:
 Now that we only have 2 x 2 grids (our base-case) left we can fill the remaining cells (this is due to the fact that any 2 x 2 square with 1 missing cell contains exactly 1 L-Shaped set of cells)
 
 ![alt text](https://github.com/CameronDeLone/Pics/blob/master/8x8-Grid-Quadrants-Filled.jpg "8x8 Grid with Quadrants")
+
+## Psuedocode:
+
+n = side length of square (always a power of 2 in this case)
+p = position of missing tile
+
+Tile(int n, Point p) {
+  if n = 2:
+    An L-shaped tile fits perfectly in the unused space
+  else:
+    Determine which quadrant p lies in, and place the L-shaped tile so
+    that it lies in every other quadrant i.e. in the center.
+    This is always possible because n is always power of 2.
+
+Now each quadrant has one "missing tile". Keep doing the same thing
+for each quadrant until the base case is triggered. That is, execute
+Tile(n/2, p)
+Tile(n/2, p1)
+Tile(n/2, p2)
+Tile(n/2, p3) 
+(where p1, p2, and p3 are the positions of the points comprising the L shape.)
+
+## Final Review
+
+Implement this code to solve for when n = 2^k.
+
+Test for the following values of k: 1, 2, 3, 4
