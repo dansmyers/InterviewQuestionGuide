@@ -72,15 +72,15 @@ Resulting Tree after mirroring M(T)
 ![Image Input BT](https://github.com/mariellaPariente/InterviewQuestionGuide/blob/master/Trees/SwapBandC.png) 
    
 ## Walking Through the the pseudo code until the first Swap:
-	Key|Value
-	---|-----
-	4\|0 | 0
-	3\|0 | 0
-	2\|0 | 0
-	1\|0 | 0
-	0\|1 | 1
-	1\|1 | 1
-	2\|1 | 1
-	3\|1 | 1
-	4\|1 | 1
+Key|Value
+---|-----
+4\|0 | 0
+3\|0 | 0
+2\|0 | 0
+1\|0 | 0
+0\|1 | 1
+1\|1 | 1
+2\|1 | 1
+3\|1 | 1
+4\|1 | 1
 	
