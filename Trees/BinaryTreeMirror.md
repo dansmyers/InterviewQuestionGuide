@@ -57,7 +57,7 @@ Resulting Tree after mirroring M(T)
 }
 ## Walking Through the Tree visually:
 	Node D Nulls
-![Image Input BT](https://github.com/mariellaPariente/InterviewQuestionGuide/blob/master/Trees/NullsD.png) 
+![Image Input BT](https://github.com/mariellaPariente/InterviewQuestionGuide/blob/master/Trees/NullD.png) 
 
 	Node E Nulls
 ![Image Input BT](https://github.com/mariellaPariente/InterviewQuestionGuide/blob/master/Trees/NullsE.png) 
