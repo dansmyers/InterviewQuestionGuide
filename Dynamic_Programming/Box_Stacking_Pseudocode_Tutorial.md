@@ -75,4 +75,4 @@ Now the original boxes and the rotations have been added to one list. Sorting th
 	return maxStackOfBoxes;
 ```
 
-This method includes one nested for loop, which means that the time complexity will be **O(1)**.
+This method includes one nested for loop, which means that the time complexity will be **O(n^2)**.
