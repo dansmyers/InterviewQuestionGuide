@@ -83,7 +83,8 @@ public String LCP(String x, String y) {
 ## The Code
 Base cases first!
 
-```// if the low index is above the high index
+```
+		// if the low index is above the high index
 		if (l > h) {
 			return "";
 		}
@@ -91,15 +92,55 @@ Base cases first!
 		// if there is only 1 string in the set
 		if (l == h) {
 			return strings.get(l);
-		}```
+		}
+```
 
 Next, find the midpoint and start the split/recursive process!
 
-<img src="https://github.com/loadingthecode/InterviewQuestionGuide/blob/master/Recursion_and_Divide-and-Conquer/2.png" width="75%">
+```
+		// finding the middle index for splitting
+		int m = midpoint(l, h);
+		
+		// split/recursive phase
+		// similar concept to a binary search
+		String a = loopLCP(strings, l, m);
+		String b = loopLCP(strings, m + 1, h);
+		
+		// return the LCP between x and y using the helper method LCPCompare
+		return LCPCompare(a, b);
+		
+```
 
 Make sure to make the LCPCompare method or an equivalent implementation to compare each letter one-by-one between both Strings!
 
-<img src="https://github.com/loadingthecode/InterviewQuestionGuide/blob/master/Recursion_and_Divide-and-Conquer/3.png" width="75%">
+```
+	// method for finding the LCP between 2 strings
+	public static String LCPCompare(String a, String b) {
+		
+		// initialize 2 pointers at 0
+		// each counter keeps track of the index for each string
+		int i = 0;
+		int j = 0;
+		
+		// keep looping until you reach the end of either string
+		while (i < a.length() && j < b.length()) {
+			
+			// if the character at both indices are the same, increment both counters
+			// else stop immediately and return the substring
+			if (a.charAt(i) == b.charAt(j)) {
+				i++; 
+				j++;
+			} else {
+				break;
+			}
+		}
+		
+		String LCP = a.substring(0, i);
+		
+		return LCP;
+		
+	}
+```
 
 ## Now Let’s Review!
 Now that we’ve gone through finding the LCP in a dynamic programming perspective, try to apply this same thought process to a similar problem:
