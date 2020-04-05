@@ -12,10 +12,10 @@ You may ask yourself when and how would inverting a binary tree be useful. As a 
 [Why is it good to know?](https://thecodebarbarian.com/i-dont-want-to-hire-you-if-you-cant-reverse-a-binary-tree)
 
 ### The good news: 
-The process of Mirroring a binary tree is pretty straightforward to understand.
+The process of Mirroring a binary tree is very straightforward to understand.
 
-## Problem Description: Invert a binary Tree
-An inverted binary tree also called the mirror of an input tree is another binary tree with left and right children swapped resulting in a mirror image of the input tree.
+## Problem Description: Mirror a binary Tree
+Mirroring is type of tree-manipulation problem, which also includes inverting parent-child relationships. In this example the mirror of an input tree is another binary tree with left and right children swapped resulting in a "mirror" image of the input tree.   
 
 ## Example:
 Starting Tree T - Input tree
