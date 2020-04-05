@@ -31,6 +31,30 @@ Try an example: For B[ ] = {5, 6} what is the maximum possible profit earned?
 
 ## Solution 
 
+There is a simple recursive solution to this problem. You can try and burst the first balloon and then solve the rest of the Burst Balloons problem with n-1 balloons. This can work, but it is very slow. It would look something like this:
+
+    class Solution(object):
+        def maxCoins(self, nums):
+            """
+            :type nums: List[int]
+            :rtype: int
+            """
+            def index(nums, i):
+                n = len(nums)
+                if i >=0 and i < n:
+                    return nums[i]
+                return 1
+
+            n = len(nums)
+            if n == 0:
+                return 0
+            if n == 1:
+                return nums[0]
+            if n == 2:
+                return nums[0]*nums[1]+max(nums[0], nums[1])
+
+            return max([index(nums, i-1)*index(nums, i)*index(nums,    i+1)+self.maxCoins(nums[:i]+nums[i+1:]) for i in range(n)])
+
 The Burst Balloon problem can be solved by **recursion**, however there is a more optimal and efficient solution that can be solved through **dynamic programming** . We are going to use bottom up dynamic programming to solve this question. The idea is to get every subarray of every length of this array and for every subarray find the last balloon which needs to burst in order to maximize the value for that subarray. Once you have calculated that for every subarray, you can use that data to find the maximum value you can get from the array. 
 
 Take a 2D array and make the number of columns and the number of rows equal to the size of the original array. 
@@ -45,17 +69,25 @@ In this case you will have 4 columns and 4 rows:
 
 Every square in this matrix is capable of holding two values. The first being the maximum value you can get from a subarray and the second being the last balloon in the subarray. We will start with the smallest subarray we can, where length = 1, and look at every subarray where length = 1. 
 
-    The first subarray starts at 0 and ends at 0, so the balloon popped would be of value 3 and the last balloon popped would be at index 0. This allows the first square to be completed by 3,0. 
+    The first subarray starts at 0 and ends at 0, balloon popped is value 3 and the last balloon popped would is index 0. 
+    This allows the first square to be completed by 3,0. 
     len = 1 
     maximum potential profit = 1 * 3 * 1 = 3
 
-    The second subarray starts at 1 and ends at 1, so the balloon popped would be of value 15 and the last balloon popped would be at index 1. This allows the next square (diagnolly) to be completed by 15, 0.
+    The second subarray starts at 1 and ends at 1, balloon popped is value 15 and the last balloon popped would is index 1. 
+    This allows the second (diagonal) square to be completed by 3,0. 
     len = 1
     maxumum potential profit = 3 * 1 * 5 = 15
 
-    The third subarray starts at 2 and ends at 2, so the balloon popped would be of value 40 and the last balloon popped would be at index 2. This allows the next square (diagnolly) to be completed by 40, 2.
+    The third subarray starts at 2 and ends at 2, balloon popped is value 40 and the last balloon popped would is index 2. 
+    This allows the second (diagonal) square to be completed by 40,2. 
     len = 1
     maxumum potential profit = 1 * 5 * 8 = 40
+    
+    The fourth subarray starts at 3 and ends at 3, balloon popped is value 40 and the last balloon popped would is index 3. 
+    This allows the second (diagonal) square to be completed by 40,3. 
+    len = 1
+    maxumum potential profit = 5 * 8 * 1 = 40
 
 Take a moment to fill in the rest of the matrix.
 
