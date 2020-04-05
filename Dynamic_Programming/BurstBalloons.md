@@ -20,6 +20,13 @@ Try an example: For B[ ] = {5, 6} what is the maximum possible profit earned?
         
     The second outcome gives you the maximum value being 36 coins. 
     
+ ## Visual Example
+ 
+ You are given an array of 4 balloons, B[1, 2, 3, 4]. Try and find the maximum possible profit when popping the balloons
+ (this example does not show the maximum possible profit).
+ 
+ ![alt text](https://github.com/SALVINOJ/InterviewQuestionGuide/blob/master/Dynamic_Programming/Burst%20Balloons%20Example.png "Example by Jessica Salvino") 
+    
 **Check-in:** Solve the following example by hand: B[ ] = {3, 1, 5, 8}.
 
 ## Solution 
