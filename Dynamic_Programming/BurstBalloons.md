@@ -36,7 +36,7 @@ The Burst Balloon problem can be solved by **recursion**, however there is a mor
 Take a 2D array and make the number of columns and the number of rows equal to the size of the original array. 
 In this case you will have 4 columns and 4 rows:
        
-|     | 0   | 1   |  2  |  3  |
+|Indices| 0   | 1   |  2  |  3  |
 | --- |:---:|:---:|:---:|:---:|
 |  0  |     |     |     |     |
 |  1  |     |     |     |     |
@@ -46,6 +46,10 @@ In this case you will have 4 columns and 4 rows:
 Every square in this matrix is capable of holding two values. The first being the maximum value you can get from a subarray and the second being the last balloon in the subarray. We will start with the smallest subarray we can, where length = 1, and look at every subarray where length = 1. 
 
 The first subarray starts at 0 and ends at 0, so the balloon popped would be of value 3 and the last balloon popped would be at index 0. This allows the first square to be completed by 3,0. 
+len = 1 
+maximum potential profit = 1 * 3 * 1
+
+
 Take a moment to fill in the rest of the matrix.
 
 The rest of the matrix looks like this: 
