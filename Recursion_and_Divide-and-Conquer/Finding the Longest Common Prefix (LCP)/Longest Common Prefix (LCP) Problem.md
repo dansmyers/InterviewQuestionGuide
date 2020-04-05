@@ -78,7 +78,7 @@ public String LCP(String x, String y) {
 
 ## Pseudocode Before Code
 
-<img src="https://github.com/loadingthecode/InterviewQuestionGuide/blob/master/Recursion_and_Divide-and-Conquer/pseudocode.PNG" width="75%">
+<img src="https://github.com/loadingthecode/InterviewQuestionGuide/blob/master/Recursion_and_Divide-and-Conquer/Finding%20the%20Longest%20Common%20Prefix%20(LCP)/Images/pseudocode.PNG" width="75%">
 
 ## The Code
 Base cases first!
