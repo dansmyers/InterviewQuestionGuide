@@ -20,11 +20,11 @@ An inverted binary tree also called the mirror of an input tree is another binar
 ## Example:
 Starting Tree T - Input tree
 
-![Image Inverted BT](https://raw.githubusercontent.com/mariellaPariente/InterviewQuestionGuide/master/Trees/inverted%20BT.png)
+![Image Inverted BT](https://raw.githubusercontent.com/mariellaPariente/InterviewQuestionGuide/master/Trees/treeImages/inverted%20BT.png)
 
 Resulting Tree after mirroring M(T) - Output Tree
 
-![Image Input BT](https://raw.githubusercontent.com/mariellaPariente/InterviewQuestionGuide/master/Trees/Input%20tree%20BT.png)
+![Image Input BT](https://raw.githubusercontent.com/mariellaPariente/InterviewQuestionGuide/master/Trees/treeImages/Input%20tree%20BT.png)
 
 
 ## The Solution:
@@ -57,22 +57,22 @@ Resulting Tree after mirroring M(T) - Output Tree
 }
 ## Walking Through the Tree visually:
 	Node D Nulls
-![Image Input BT](https://github.com/mariellaPariente/InterviewQuestionGuide/blob/master/Trees/NullD.png) 
+![Image Input BT](https://github.com/mariellaPariente/InterviewQuestionGuide/blob/master/Trees/treeImages/NullD.png) 
 
 	Node E Nulls
-![Image Input BT](https://github.com/mariellaPariente/InterviewQuestionGuide/blob/master/Trees/NullsE.png) 
+![Image Input BT](https://github.com/mariellaPariente/InterviewQuestionGuide/blob/master/Trees/treeImages/NullsE.png) 
 
 	Swap D and E (First Swap)
-![Image Input BT](https://github.com/mariellaPariente/InterviewQuestionGuide/blob/master/Trees/SwapDandE.png) 
+![Image Input BT](https://github.com/mariellaPariente/InterviewQuestionGuide/blob/master/Trees/treeImages/SwapDandE.png) 
 
 	Swap F and G 
-![Image Input BT](https://github.com/mariellaPariente/InterviewQuestionGuide/blob/master/Trees/SwapFandG.png) 
+![Image Input BT](https://github.com/mariellaPariente/InterviewQuestionGuide/blob/master/Trees/treeImages/SwapFandG.png) 
 
 	Swap B and C
-![Image Input BT](https://github.com/mariellaPariente/InterviewQuestionGuide/blob/master/Trees/SwapBandC.png) 
+![Image Input BT](https://github.com/mariellaPariente/InterviewQuestionGuide/blob/master/Trees/treeImages/SwapBandC.png) 
    
 ## Walking Through the pseudo code until the first Swap:
-![Image Input BT](https://github.com/mariellaPariente/InterviewQuestionGuide/blob/master/Trees/firstSwap.png)
+![Image Input BT](https://github.com/mariellaPariente/InterviewQuestionGuide/blob/master/Trees/treeImages/firstSwap.png)
 
 ## Related Topics
 [Inorder, Preorder and Postorder traversals](https://www.geeksforgeeks.org/dfs-traversal-of-a-tree-using-recursion/)
