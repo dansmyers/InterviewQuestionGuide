@@ -83,7 +83,15 @@ public String LCP(String x, String y) {
 ## The Code
 Base cases first!
 
-<img src="https://github.com/loadingthecode/InterviewQuestionGuide/blob/master/Recursion_and_Divide-and-Conquer/1.png" width="75%">
+```// if the low index is above the high index
+		if (l > h) {
+			return "";
+		}
+		
+		// if there is only 1 string in the set
+		if (l == h) {
+			return strings.get(l);
+		}```
 
 Next, find the midpoint and start the split/recursive process!
 
