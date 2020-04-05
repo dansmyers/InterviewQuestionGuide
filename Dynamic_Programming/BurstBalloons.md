@@ -45,16 +45,23 @@ In this case you will have 4 columns and 4 rows:
 
 Every square in this matrix is capable of holding two values. The first being the maximum value you can get from a subarray and the second being the last balloon in the subarray. We will start with the smallest subarray we can, where length = 1, and look at every subarray where length = 1. 
 
-The first subarray starts at 0 and ends at 0, so the balloon popped would be of value 3 and the last balloon popped would be at index 0. This allows the first square to be completed by 3,0. 
-len = 1 
-maximum potential profit = 1 * 3 * 1
+    The first subarray starts at 0 and ends at 0, so the balloon popped would be of value 3 and the last balloon popped would be at index 0. This allows the first square to be completed by 3,0. 
+    len = 1 
+    maximum potential profit = 1 * 3 * 1 = 3
 
+    The second subarray starts at 1 and ends at 1, so the balloon popped would be of value 15 and the last balloon popped would be at index 1. This allows the next square (diagnolly) to be completed by 15, 0.
+    len = 1
+    maxumum potential profit = 3 * 1 * 5 = 15
+
+    The third subarray starts at 2 and ends at 2, so the balloon popped would be of value 40 and the last balloon popped would be at index 2. This allows the next square (diagnolly) to be completed by 40, 2.
+    len = 1
+    maxumum potential profit = 1 * 5 * 8 = 40
 
 Take a moment to fill in the rest of the matrix.
 
 The rest of the matrix looks like this: 
 
-|     | 0   | 1   |  2  |  3  |
+|Indices| 0   | 1   |  2  |  3  |
 | --- |:---:|:---:|:---:|:---:|
 |  0  | 3,0 | 30,0|159,0|167,3|
 |  1  |     | 15,1|135,2|159,3|
