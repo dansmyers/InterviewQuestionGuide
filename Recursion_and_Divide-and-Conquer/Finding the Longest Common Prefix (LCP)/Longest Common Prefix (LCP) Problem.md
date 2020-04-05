@@ -47,7 +47,7 @@ Break the main set into smaller sets until you reach atomic sets
 
 ![Table Depicting Midpoint Splitting Process][table1]
 
-[table1]: https://github.com/loadingthecode/InterviewQuestionGuide/blob/master/Recursion_and_Divide-and-Conquer/Images/table1.PNG
+[table1]: https://github.com/loadingthecode/InterviewQuestionGuide/blob/master/Recursion_and_Divide-and-Conquer/Finding%20the%20Longest%20Common%20Prefix%20(LCP)/Images/table1.PNG
 
 ### Recursive Process
 
