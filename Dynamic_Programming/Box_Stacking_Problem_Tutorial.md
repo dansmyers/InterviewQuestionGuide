@@ -93,6 +93,33 @@ Now the original boxes and the rotations have been added to one list. Sorting th
 
 This method includes one nested for loop, which means that the time complexity will be **O(n^2)**.
 
-# Example
+## Example
 
+Let's look at an example with two boxes that are 1 x 2 x 3 and 4 x 5 x 6. When the roations are applied we will have six boxes```allBoxes = [(4,5,6,30), (5,4,6,24), (6,4,5,20), (1,2,3,6), (2,1,3,3), (3,1,2)]```sorted by decreasing base area. From this we get the list of maximum stack heights```maxStackHeight = [4, 5, 6, 1, 2, 3]```.
 
+The nested for loop checks to see if the current allBoxes i can be added to maxStackHieght j. If it can the second if checks if adding allBoxes i to maxStackHeight j results in a height greater than the current maxStackHieght i. Here is how the for loops update the max heights for the maxStackHeight list.
+
+```[4,5,6,1,2,3]```- Initial list (assume that box indexes start at 0)
+
+Updating maxStackHeight 2 when adding allBoxes 2 to max stacks
+```[4, 5, 10, 1, 2, 3]``` - maxStackHieght[2] = 10 since allBoxes[2] is added to maxStackHieght[0]
+
+Updating maxStackHeight 3 when adding allBoxes 3 to max stacks
+```[4, 5, 10, 5, 2, 3]``` - maxStackHieght[3] = 5 since allBoxes[3] is added to maxStackHiehgt[0]
+```[4, 5, 10, 6, 2, 3]``` - maxStackHieght[3] = 6 since allBoxes[3] is added to maxStackHieght[1]
+```[4, 5, 10, 11, 2, 3]``` - maxStackHieght[3] = 11 since allBoxes[3] is added to maxStackHieght[2]
+
+Updating maxStackHeight 4 when adding allBoxes 4 to max stacks
+```[4, 5, 10, 11, 6, 3]``` - maxStackHieght[4] = 6 since allBoxes[4] is added to maxStackHiehgt[0]
+```[4, 5, 10, 11, 7, 3]``` - maxStackHieght[4] = 7 since allBoxes[4] is added to maxStackHieght[1]
+```[4, 5, 10, 11, 12, 3]``` - maxStackHieght[4] = 12 since allBoxes[3] is added to maxStackHieght[2]
+
+The last trace is where the recursive sub-structure comes into play. maxStackHiehgt[4] is set to the sum of allBoxes[3] and maxStackHieght[2], but maxStackHeight[2] was updated earlier in the loop. This phenomenon occurs a lot in the next traces.
+
+Updating maxStackHeight 5 when adding allBoxes 5 to max stacks
+```[4, 5, 10, 11, 12, 7]``` - maxStackHieght[5] = 7 since allBoxes[5] is added to maxStackHiehgt[0]
+```[4, 5, 10, 11, 12, 8]``` - maxStackHieght[5] = 8 since allBoxes[5] is added to maxStackHiehgt[1]
+```[4, 5, 10, 11, 12, 13]``` - maxStackHieght[5] = 13 since allBoxes[5] is added to maxStackHiehgt[2]
+```[4, 5, 10, 11, 12, 14]``` - maxStackHieght[5] = 14 since allBoxes[5] is added to maxStackHiehgt[3]
+
+Thus, the maximum possible stack height is 14.
