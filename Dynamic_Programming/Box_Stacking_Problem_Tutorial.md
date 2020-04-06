@@ -102,14 +102,17 @@ The nested for loop checks to see if the current allBoxes i can be added to maxS
 ```[4,5,6,1,2,3]```- Initial list (assume that box indexes start at 0)
 
 Updating maxStackHeight 2 when adding allBoxes 2 to max stacks
+
 ```[4, 5, 10, 1, 2, 3]``` - maxStackHieght[2] = 10 since allBoxes[2] is added to maxStackHieght[0]
 
 Updating maxStackHeight 3 when adding allBoxes 3 to max stacks
+
 ```[4, 5, 10, 5, 2, 3]``` - maxStackHieght[3] = 5 since allBoxes[3] is added to maxStackHiehgt[0]
 ```[4, 5, 10, 6, 2, 3]``` - maxStackHieght[3] = 6 since allBoxes[3] is added to maxStackHieght[1]
 ```[4, 5, 10, 11, 2, 3]``` - maxStackHieght[3] = 11 since allBoxes[3] is added to maxStackHieght[2]
 
 Updating maxStackHeight 4 when adding allBoxes 4 to max stacks
+
 ```[4, 5, 10, 11, 6, 3]``` - maxStackHieght[4] = 6 since allBoxes[4] is added to maxStackHiehgt[0]
 ```[4, 5, 10, 11, 7, 3]``` - maxStackHieght[4] = 7 since allBoxes[4] is added to maxStackHieght[1]
 ```[4, 5, 10, 11, 12, 3]``` - maxStackHieght[4] = 12 since allBoxes[3] is added to maxStackHieght[2]
@@ -117,6 +120,7 @@ Updating maxStackHeight 4 when adding allBoxes 4 to max stacks
 The last trace is where the recursive sub-structure comes into play. maxStackHiehgt[4] is set to the sum of allBoxes[3] and maxStackHieght[2], but maxStackHeight[2] was updated earlier in the loop. This phenomenon occurs a lot in the next traces.
 
 Updating maxStackHeight 5 when adding allBoxes 5 to max stacks
+
 ```[4, 5, 10, 11, 12, 7]``` - maxStackHieght[5] = 7 since allBoxes[5] is added to maxStackHiehgt[0]
 ```[4, 5, 10, 11, 12, 8]``` - maxStackHieght[5] = 8 since allBoxes[5] is added to maxStackHiehgt[1]
 ```[4, 5, 10, 11, 12, 13]``` - maxStackHieght[5] = 13 since allBoxes[5] is added to maxStackHiehgt[2]
