@@ -113,7 +113,7 @@ Updating maxStackHeight 4 when adding allBoxes 4 to max stacks:
 
 * ```[4, 5, 10, 11, 6, 3]``` - maxStackheight[4] = 6 since allBoxes[4] is added to maxStackHiehgt[0]
 * ```[4, 5, 10, 11, 7, 3]``` - maxStackheight[4] = 7 since allBoxes[4] is added to maxStackheight[1]
-* ```[4, 5, 10, 11, 12, 3]``` - maxStackheight[4] = 12 since allBoxes[3] is added to maxStackheight[2]
+* ```[4, 5, 10, 11, 12, 3]``` - maxStackheight[4] = 12 since allBoxes[4] is added to maxStackheight[2]
 
 The last trace is where the recursive sub-structure comes into play. maxStackHiehgt[4] is set to the sum of allBoxes[3] and maxStackheight[2], but maxStackHeight[2] was updated earlier in the loop. This phenomenon occurs a lot in the next traces.
 
