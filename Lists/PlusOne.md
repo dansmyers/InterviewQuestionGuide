@@ -43,7 +43,7 @@ Input: array integer of 89
 **O(n)**
 The worst case scenario is if you have to access all of the elements and change the individual digits. For instance, you have to access all digits if the array is 9999 because all digits are 9 and you have to change them to 0 and add 1. 
 
-# Code Implementation
+# Code Implementation 
 ```
 public void plusOne(int[] array) { 
     if (array == null || array.length == 0) {
@@ -65,6 +65,6 @@ public void plusOne(int[] array) {
 } 
 ```
   
-# Review Questions
+# Review Questions!
 1. How would the code implementation be different if it was not a given that the array with non-negative? 
 2. How does the code implementation handle if the array needs to grow where a new digit needs to be added? 
