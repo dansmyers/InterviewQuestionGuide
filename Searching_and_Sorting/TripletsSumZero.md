@@ -72,7 +72,7 @@ public void findTriplets(int[] array) {
 1. What is this kind of searching method called? 
 2. How would this implementation work better if we sorted the array list first? 
 3. Can you make this solution more efficient? 
-   **YES! There are other solutions with a Big O notation of no more than O(n^2). 
+   **YES! There are other solutions with a Big O notation of no more than O(n^2).**
 
 # Sort List: 1st efficient solution
 1. Implement a boolean to keep track whether or not a solution set is found. First, implement it as false. If a set is found, change it to true. At the end, if the boolean is still false, then return an appropriate statement that no triplets are found. 
