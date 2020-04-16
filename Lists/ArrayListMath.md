@@ -41,7 +41,7 @@ System.out.printf("%.5f", (sumOfElements / exampleArrayList.size()));
 
 ### Median
 
-To calculate median, we must first solve for n, which will be the total number of elements in the set divided by two, which would give us 3 in our example. If the number of elements in the set is odd, the (n + 0.5)th element in the set is the median. If the number of elements in the set is even, which our example is, then we would find the mean of the nth and n + 1th elements in the set, which would be the mean of the third and fourth elements of the set, 1.01 and 3, giving us a median of 2.005.
+To calculate median, we must first solve for n, which will be the total number of elements in the set divided by two, which would give us 3 in our example. If the number of elements in the set is odd, the (n + 0.5)th element in the set is the median. If the number of elements in the set is even, which our example is, then we would find the mean of the nth and n + 1th elements in the set. In our example, this would be the mean of the third and fourth elements of the set, 1.01 and 3, giving us a median of 2.005.
 ```java
 if (exampleArrayList.size() % 2 == 0) {
     int halfEven = (exampleArrayList.size() / 2);
@@ -70,7 +70,7 @@ Since this challenge is essentially asking three similar questions at once, each
 
 * Calculating the **mean** would have a complexity of **O(n)** because the calculation for mean involves going through the entire set and finding the sum, and the complexity will scale linearly with the size of the set. 
 * Calculating the **median** would have a complexity of **O(n)** because the calculation for median scales linearly with the size of the set.
-* Calculating the **range** would have a complexity of **O(1)** because the process will always take the same amount of time. Since all that is being done is subtracting the first element of the ArrayList from the last, this process isn't affected by the size of the ArrayList *because the ArrayList is **already sorted.***
+* Calculating the **range** would have a complexity of **O(1)** because the process will always take the same amount of time. Since all that is being done is subtracting the first element of the ArrayList from the last, this process isn't affected by the size of the ArrayList *because the ArrayList is **already sorted** from the previous operation.*
 
 
 ## Final Review Questions
