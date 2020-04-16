@@ -16,7 +16,9 @@ To solve such a problem, one must be familiar with the mathematical formulas for
 
 ## Solving
 
-The first step to solving this problem by hand would be to rearrange the set of elements, or the ArrayList, into ascending order, giving us {-5.1, 0.0, 1.01, 3.0, 4.2, 11.2}. This can be accomplished with the `Collections.sort(exampleArrayList)` method of the Collections class. 
+The first step to solving this problem by hand would be to rearrange the set of elements, or the ArrayList, into ascending order, giving us {-5.1, 0.0, 1.01, 3.0, 4.2, 11.2}. This can be accomplished with the `Collections.sort(exampleArrayList);` method of the Collections class. You must `import java.util.Collections;` before you can use the method.
+
+**_You must sort the set/ArrayList before solving for the median and range._**
 
 Then, we would add up the total number of elements in the set, which would be 6. This can be accomplished with the `exampleArrayList.size()` method. 
 
@@ -60,3 +62,13 @@ To calculate the range, we subtract the first element of the set from the last e
 ```java
 System.out.println("The range is " + ((exampleArrayList.get(exampleArrayList.size() - 1) - exampleArrayList.get(0))));
 ```
+
+
+## Complexity Analysis
+The solution to this challenge interview question would have a complexity analysis of **O(n)** due to each aspect of the process increasing linearly in complexity as the size of the ArrayList increases.
+
+
+## Final Review Questions
+* How does one calculate mean, median and range (by hand)?
+* What must be done before calculating median and range?
+* What Java class must be imported to simplify the process in the previous question?
