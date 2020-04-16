@@ -41,7 +41,7 @@ System.out.printf("%.5f", (sumOfElements / exampleArrayList.size()));
 
 ### Median
 
-To calculate median, we must first divide the total number of elements in the set by two, which would give us 3. If the number of elements in the set is even, which our example is, then we would find the mean of the nth and n + 1th elements in the set to solve for the median, with n being the total number of elements in the set divided by two. If it's odd, the total number of elements in the set divided by two gives us the median.
+To calculate median, we must first solve for n, which will be the total number of elements in the set divided by two, which would give us 3 in our example. If the number of elements in the set is odd, the nth element in the set is the median. If the number of elements in the set is even, which our example is, then we would find the mean of the nth and n + 1th elements in the set, which would be the mean of the third and fourth elements of the set, 1.01 and 3, giving us a median of 2.005.
 ```java
 if (exampleArrayList.size() % 2 == 0) {
     int halfEven = (exampleArrayList.size() / 2);
@@ -58,7 +58,7 @@ else {
 
 ### Range
 
-To calculate the range, we subtract the first element of the set from the last element of the set. In our example, this would be 11.2 and -5.1, giving us 16.3. 
+To calculate range, we subtract the first element of the set from the last element of the set. In our example, this would be 11.2 and -5.1, giving us 16.3. 
 ```java
 System.out.println("The range is " + ((exampleArrayList.get(exampleArrayList.size() - 1) - exampleArrayList.get(0))));
 ```
