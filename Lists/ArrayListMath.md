@@ -41,7 +41,7 @@ System.out.printf("%.5f", (sumOfElements / exampleArrayList.size()));
 
 ### Median
 
-To calculate median, we must first solve for n, which will be the total number of elements in the set divided by two, which would give us 3 in our example. If the number of elements in the set is odd, the nth element in the set is the median. If the number of elements in the set is even, which our example is, then we would find the mean of the nth and n + 1th elements in the set, which would be the mean of the third and fourth elements of the set, 1.01 and 3, giving us a median of 2.005.
+To calculate median, we must first solve for n, which will be the total number of elements in the set divided by two, which would give us 3 in our example. If the number of elements in the set is odd, the (n + 0.5)th element in the set is the median. If the number of elements in the set is even, which our example is, then we would find the mean of the nth and n + 1th elements in the set, which would be the mean of the third and fourth elements of the set, 1.01 and 3, giving us a median of 2.005.
 ```java
 if (exampleArrayList.size() % 2 == 0) {
     int halfEven = (exampleArrayList.size() / 2);
