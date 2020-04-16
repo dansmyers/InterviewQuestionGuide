@@ -4,7 +4,7 @@ In this interview challenge question, given an unsorted ArrayList of numbers, so
 2. Median
 3. Range
 
-# An Example Problem
+# Example Problem
 #### A program is set up such that it prompts a user to input double values into an ArrayList. Given that the user inputted the values {3.0, 4.2, -5.1, 11.2, 0.0, 1.01}, _calculate the **mean, median, and range** of the contents of the ArrayList_. 
 
 
