@@ -65,7 +65,12 @@ System.out.println("The range is " + ((exampleArrayList.get(exampleArrayList.siz
 
 
 ## Complexity Analysis
-The solution to this challenge interview question would have a complexity analysis of **O(n)** due to each aspect of the process increasing linearly in complexity as the size of the ArrayList increases.
+Since this challenge is essentially asking three similar questions at once, each question can be separately analyzed for complexity:
+* Sorting the ArrayList via the `Collections.sort()` method is crucial for solving the problem. This method has a complexity of **O(nlog(n))** because it utilizes a "stable, adaptive, iterative mergesort that requires far fewer than n lg(n) comparisons when the input array is partially sorted, while offering the performance of a traditional mergesort when the input array is randomly ordered. If the input array is nearly sorted, the implementation requires approximately n comparisons." [Source](https://docs.oracle.com/javase/7/docs/api/java/util/Collections.html#method_detail "docs.oracle.com Class Collections")
+
+* Calculating the **mean** would have a complexity of **O(n)** because the calculation for mean involves going through the entire set and finding the sum, and the complexity will scale linearly with the size of the set. 
+* Calculating the **median** would have a complexity of **O(n)** because the calculation for median scales linearly with the size of the set.
+* Calculating the **range** would have a complexity of **O(1)** because the process will always take the same amount of time. Since all that is being done is subtracting the first element of the ArrayList from the last, this process isn't affected by the size of the ArrayList *because the ArrayList is **already sorted.***
 
 
 ## Final Review Questions
