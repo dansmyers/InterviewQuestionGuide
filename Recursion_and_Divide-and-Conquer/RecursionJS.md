@@ -37,16 +37,19 @@ You must create a working recursive case for these methods in order to make them
  
  This method has 2 int variables you will return in the recursion.
  N grows exponentially by 2 and X grows 35 by each iteration.
-  
+
+    public static void main(String[] args) {
+        Rec2(0, 0, 400);
+    }
     public static void Rec2(int n,int x,int MaxNum) {
     if(n==0){
     Rec2(1,x,MaxNum);
     }
-    else if(x==0){
+    else if(x == 0){
     Rec2(n,1,MaxNum);
     }
     $$$$$
-    if(n>=MaxNum||x>=MaxNum){
+    else if(n>=MaxNum||x>=MaxNum){
     if(n>x){
     System.out.println("N reached the number first");
     return;
@@ -62,12 +65,13 @@ You must create a working recursive case for these methods in order to make them
 ### __Solution below__
 ## The Solution
 
-    if(n<MaxNum||x<MaxNum){
-    Rec2(n*2,x+35);
-    }
+    else if (n < MaxNum && x < MaxNum)
+        {
+            Rec2(n * 2, x + 35, MaxNum);
+        }
     
    MaxNum is the variable that you are comparing to our N and X variable. 
-   You must make a conditional statement that checks if either variable has surpassed MaxNum.
+   You must make a conditional statement that checks if either variable has yet surpassed MaxNum.
    So if the conditions specify that X or Y have not surpassed the number, you use recursion to return the two variables.
    But each return, you must multiply or add the given number in the instructions in order for X or Y to eventually meet the conditional that will tell us which one reached MaxNum first.
    The given change to X/N each iteration, and MaxNums value could be replaced in this method to figure out the race between any two equations to any number.
@@ -85,6 +89,7 @@ You must create a working recursive case for these methods in order to make them
    ## Complexity
    0(Log_2 n)
    
+   MaxNum will be reached in the worst case by multiplying N*2^? .  
    ## Code implentation
    Recursion can be used for a lot of things. 
    It can be used to create a single method that can reverse the letter structure of a word of any size. 
