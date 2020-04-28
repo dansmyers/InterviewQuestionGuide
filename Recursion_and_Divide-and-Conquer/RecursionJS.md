@@ -76,7 +76,7 @@ You must create a working recursive case for these methods in order to make them
    But each return, you must multiply or add the given number in the instructions in order for X or Y to eventually meet the conditional that will tell us which one reached MaxNum first.
    The given change to X/N each iteration, and MaxNums value could be replaced in this method to figure out the race between any two equations to any number.
    
-   All recursive cases must have a conditional. The conditional stops the program from never ending, and endlessly calling itself. 
+   All recursive cases must have 3 parts. A conditional, The conditional stops the program from never ending, and endlessly calling itself. A counter, the counter will tell the program when to stop. Recursion, you must call the method you are already running from inside the case statement but returning new variables in the process.
    It is almost like a loop counter, but you have more freedom. What variables you must use to reach this conition would be given to you
    usually when told the purpose of the method. 
    
@@ -97,7 +97,11 @@ You must create a working recursive case for these methods in order to make them
    with ever changing variables. It can be very useful in handfuls of programming situiations that require change over certain iterations. 
    
    ## Final Review Question
-    
+   What are the 3 things that you need for a recursive case.
+   
+   A counter, a conditional, the method calling itself
+   
+   
    
    
 
