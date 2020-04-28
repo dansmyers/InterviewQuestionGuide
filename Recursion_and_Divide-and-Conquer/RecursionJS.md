@@ -80,8 +80,8 @@ You must create a working recursive case for these methods in order to make them
    And secondly you must increment you counter / counters in a way where they will eventually meet the wanted condition.
    
    ## Illustration of the Problem
-   ![alt text](https://github.com/JohnnyShanahan/Geocaris-Home/Screenshot_13.png "Illustration of previous problem")
-   
+   [logo]: https://github.com/JohnnyShanahan/Geocaris-Home/blob/master/Screenshot_13.png "Logo Title Text 2" 
+   ![alt text][logo]
    ## Complexity
    
    
