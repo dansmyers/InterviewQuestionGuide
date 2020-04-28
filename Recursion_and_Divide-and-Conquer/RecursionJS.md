@@ -38,32 +38,34 @@ You must create a working recursive case for these methods in order to make them
  This method has 2 int variables you will return in the recursion.
  N grows exponentially by 2 and X grows 35 by each iteration.
   
-    public static int Rec2(int n,int x) {
+    public static void Rec2(int n,int x) {
     int MaxNum;
     MaxNum = 400;
     if(n==0){
-    return Rec2(1,x);
+    Rec2(1,x);
     }
-    if(x==0){
-    return Rec2(n,1);
+    else if(x==0){
+    Rec2(n,1);
     }
     $$$$$
     if(n>=MaxNum||x>=MaxNum){
     if(n>x){
     System.out.println("N reached the number first");
+    return;
     }
     else{
     System.out.println("X reached the number first");
+    return;
     }
     }
-	  return MaxNum;
+	  return;
     }
 
 ### __Solution below__
 ## The Solution
 
     if(n<MaxNum||x<MaxNum){
-    return Rec2(n*2,x+35);
+    Rec2(n*2,x+35);
     }
     
    MaxNum is the variable that you are comparing to our N and X variable. 
@@ -92,7 +94,7 @@ You must create a working recursive case for these methods in order to make them
    with ever changing variables. It can be very useful in handfuls of programming situiations that require change over certain iterations. 
    
    ## Final Review Question
-   
+    
    
    
 
