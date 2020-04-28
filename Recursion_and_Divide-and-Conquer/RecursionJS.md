@@ -87,6 +87,7 @@ You must create a working recursive case for these methods in order to make them
    [logo]: https://github.com/JohnnyShanahan/Geocaris-Home/blob/master/Screenshot_13.png "Logo Title Text 2" 
    ![alt text][logo]
    ## Complexity
+   The complexity of the previous problem.
    0(Log_2 n)
    
    MaxNum will be reached in the worst case by multiplying N*2^? .  
@@ -100,7 +101,7 @@ You must create a working recursive case for these methods in order to make them
    What are the 3 different parts of a recursive case.
    
    ### __Solution Below__
-   A counter, a conditional, the method calling itself
+   A counter, a conditional, Recursion (the method calling itself, while returning a new variable).
    
    
    
