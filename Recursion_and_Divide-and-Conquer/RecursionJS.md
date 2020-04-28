@@ -45,10 +45,10 @@ You must create a working recursive case for these methods in order to make them
     return Rec2(1,x);
     }
     if(x==0){
-    return Rec2(n,x);
+    return Rec2(n,1);
     }
     $$$$$
-    if(n>MaxNum||x>MaxNum){
+    if(n>=MaxNum||x>=MaxNum){
     if(n>x){
     System.out.println("N reached the number first");
     }
