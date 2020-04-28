@@ -97,8 +97,9 @@ You must create a working recursive case for these methods in order to make them
    with ever changing variables. It can be very useful in handfuls of programming situiations that require change over certain iterations. 
    
    ## Final Review Question
-   What are the 3 things that you need for a recursive case.
+   What are the 3 different parts of a recursive case.
    
+   ### __Solution Below__
    A counter, a conditional, the method calling itself
    
    
