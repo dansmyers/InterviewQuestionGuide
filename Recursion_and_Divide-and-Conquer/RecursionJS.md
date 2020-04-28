@@ -38,9 +38,7 @@ You must create a working recursive case for these methods in order to make them
  This method has 2 int variables you will return in the recursion.
  N grows exponentially by 2 and X grows 35 by each iteration.
   
-    public static void Rec2(int n,int x) {
-    int MaxNum;
-    MaxNum = 400;
+    public static void Rec2(int n,int x,int MaxNum) {
     if(n==0){
     Rec2(1,x);
     }
