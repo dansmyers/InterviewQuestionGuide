@@ -35,7 +35,7 @@ You must create a working recursive case for these methods in order to make them
  The goal of this method is to figure out which of 2 growing variables will reach the variable MaxNum first.
  The line with the $$$$$ indicates where the Recursive case fits in.
  
- This method has 2 int variables you will return in the recursion.
+ This method has 2 changing int variables you will return in the recursion.
  N grows exponentially by 2 and X grows 35 by each iteration.
 
     public static void main(String[] args) {
