@@ -40,10 +40,10 @@ You must create a working recursive case for these methods in order to make them
   
     public static void Rec2(int n,int x,int MaxNum) {
     if(n==0){
-    Rec2(1,x);
+    Rec2(1,x,MaxNum);
     }
     else if(x==0){
-    Rec2(n,1);
+    Rec2(n,1,MaxNum);
     }
     $$$$$
     if(n>=MaxNum||x>=MaxNum){
@@ -83,7 +83,7 @@ You must create a working recursive case for these methods in order to make them
    [logo]: https://github.com/JohnnyShanahan/Geocaris-Home/blob/master/Screenshot_13.png "Logo Title Text 2" 
    ![alt text][logo]
    ## Complexity
-   
+   0(Log_2 n)
    
    ## Code implentation
    Recursion can be used for a lot of things. 
