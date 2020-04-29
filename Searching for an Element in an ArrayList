@@ -1,0 +1,94 @@
+#H1 How to efficiently check if an element is present in an Array List
+
+Given an ArrayList containing an unkown amount of elements, how do to search for a specific element within the ArrayList.
+
+If an array list contains 10 elements, how would you search for the specific element "10"?
+  Instead of writing a segment of code or loop to check each element individually, '.contains()' can be used.
+  All you need to do is use 'arrayListName.contains("element you're searching for");'
+  You can also print it's result or use it to influence another variable.
+  
+  
+ If an ArrayList is being used to store usernames or emails, and you need your program to check if the ArrayList already contains a new
+ user name or email before it is added, you would be able to use '.contains()'
+ 
+ '.contains()' has a complexity of **O(n)** since the ArratList is only being ran through one time, each element being checked once.
+ 
+ **Example:**
+"          public class Class
+  {
+     public static void main(String[] args)
+      {
+          ArrayList<Double> list = new ArrayList<Double>();
+  
+          list.add(1.1);
+ 
+          list.add(2.2);
+ 
+          list.add(3.3);
+ 
+          list.add(4.4);
+          
+          list.add(5.5);
+ 
+            //Checking whether list conatins '3.3'
+ 
+            System.out.println(list.contains(3.3));    
+      } 
+  }
+  "
+  **The output of this example would be True, since the ArrayList does contain 3.3**
+  
+  Practice Problem:
+    Given an ArrayList with many names on it, check if your own name is an element wihtin the list.
+    
+ "   public class Names
+  {
+     public static void main(String[] args)
+      {
+          ArrayList<Double> list = new ArrayList<Double>();
+  
+          list.add(Mitch);
+ 
+          list.add(Randy);
+ 
+          list.add(James);
+ 
+          list.add(Kenneth);
+          
+          list.add(Edgar);
+          
+          list.add(Ichiro);
+ 
+          list.add(Dee);
+ 
+          list.add(Kyle);
+ 
+          list.add(Ben);
+          
+          list.add(Felix);
+          
+          list.add(Donald);
+ 
+          list.add(Barack);
+ 
+          list.add(George);
+ 
+          list.add(Bill);
+          
+          list.add(Ronald);
+          
+          list.add(Jimmy);
+ 
+          list.add(Gerald);
+ 
+          list.add(Richard);
+ 
+          list.add(Lyndon);
+          
+          list.add(John);
+          
+          //now check for your name
+          
+       }
+  }
+  "
